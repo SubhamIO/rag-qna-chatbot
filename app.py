@@ -66,7 +66,11 @@ def main():
 
 
         embeddings=HuggingFaceEmbeddings(model_name=embedding)
-        model = ChatGroq(groq_api_key=groq_api_key,model=llm,temperature=temperature,max_tokens=max_tokens) 
+        model = ChatGroq(groq_api_key=groq_api_key,
+                         model=llm,
+                         temperature=temperature,
+                        #  max_tokens=max_tokens
+                         ) 
 
         if 'store' not in st.session_state:
                 st.session_state.store={}
