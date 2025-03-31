@@ -162,7 +162,11 @@ def main():
                         {'input': question},
                         config=config
                     )["answer"]
+                
+                st.write(st.session_state.store)
                 st.write("Assistant:", answer)
+                st.write("Chat History:", session_history.messages)
+
             else:
                 st.write("Please provide the user input")  
 
