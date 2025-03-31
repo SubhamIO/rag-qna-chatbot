@@ -30,8 +30,8 @@ from langchain_community.vectorstores import FAISS
 
 load_dotenv()
 
-LANGCHAIN_API_KEY = st.secrets['keys']['LANGCHAIN_API_KEY']
-HF_TOKEN = st.secrets['keys']['HF_TOKEN']
+LANGCHAIN_API_KEY = st.secrets['LANGCHAIN_API_KEY']
+HF_TOKEN = st.secrets['HF_TOKEN']
 
 ## Langsmith Tracking
 os.environ["LANGCHAIN_API_KEY"]=LANGCHAIN_API_KEY
