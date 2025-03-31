@@ -11,7 +11,7 @@ from langchain_core.documents import Document
 import os
 from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
+# from langchain_chroma import Chroma
 
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
